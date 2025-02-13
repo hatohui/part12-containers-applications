@@ -1,11 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const { added_todos } = require("./todos");
+const { getAsync } = require("../redis/index");
 
 router.get("/", async (req, res) => {
-  res.send({
+  const added_todos = await getAsync("added_todos");
+  const state = {
     added_todos,
-  });
+  };
+  res.send(state);
 });
 
-module.exports = router;
+module.exports = { router };

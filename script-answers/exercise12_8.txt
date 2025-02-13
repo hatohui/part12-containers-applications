@@ -3,7 +3,6 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 6af214a68c7a   mongo     "docker-entrypoint.s…"   15 seconds ago   Up 15 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
 
 hatohui@hatohui MINGW64 /d/Programming/2024/Repositories/part12-containers-applications/todo-app/todo-backend (main)
-$ docker exec -it todo-backend-mongo-1 bash
 
 root@6af214a68c7a:/# mongosh -u root -p example
 Current Mongosh Log ID: 67a58b67599c607fc3544ca6
