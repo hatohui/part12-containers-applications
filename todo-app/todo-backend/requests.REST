@@ -1,0 +1,7 @@
+PUT http://localhost:3000/todos/67a582eea35904ceb4544ca7
+Content-Type: application/json
+
+{
+  "text": "We love new world",
+  "done": false
+}
